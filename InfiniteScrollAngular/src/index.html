@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+<head>
+  <title>Infinite Scroll App</title>
+</head>
+<body ng-app="infiniteScrollApp" ng-controller="infiniteScrollController">
+  <div id="fixed" infinite-scroll="loadMore()">
+    <ul>
+      <li ng-repeat="i in items">{{i.id}}</li>
+    </ul>  
+  </div>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.13/angular.min.js"></script>
+<script src="scroll.js"></script>
+</body>
+</html>
+</body>
